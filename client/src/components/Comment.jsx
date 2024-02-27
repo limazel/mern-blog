@@ -120,6 +120,7 @@ export default function Comment({ comment, onLike, onEdit }) {
                 (currentUser._id === comment.userId || currentUser.isAdmin) && (
                   <button
                     type="button"
+                    onClick={handleEdit}
                     className="text-gray-400 hover:text-blue-500"
                   >
                     Edit
