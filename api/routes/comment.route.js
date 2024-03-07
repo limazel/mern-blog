@@ -1,6 +1,13 @@
 import express from "express";
 import { verifyToken } from "../utils/verifyUser.js";
-import { createComment, editComment, getPostComments, likeComment, deleteComment, getcomments } from "../controllers/comment.controllers.js";
+import {
+  createComment,
+  editComment,
+  getPostComments,
+  likeComment,
+  deleteComment,
+  getcomments,
+} from "../controllers/comment.controllers.js";
 
 const router = express.Router();
 
